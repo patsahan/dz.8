@@ -1,0 +1,142 @@
+#navbar {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#navbar a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0 20px;
+}
+#navbar a:first-child {
+  margin-left: 0;
+}
+#navbar a:last-child {
+  margin-right: 0;
+}
+#navbar a:hover {
+  text-decoration: underline;
+}
+#navbar a:first-child {
+  color: #355d88;
+}
+
+.header {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 10%;
+}
+.header h1 {
+  color: #355d88;
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.header p {
+  color: #000000;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.header .button {
+  background-color: #355d88;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.header .button:hover {
+  background-color: #274463;
+}
+
+.about {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 6%;
+}
+.about h2 {
+  color: #355d88;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.about p {
+  color: #000000;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.sidebar {
+  display: flex;
+  background-color: #355d88;
+  padding: 20px;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.sidebar i {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar i a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.main {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 40px;
+  margin-top: 50px;
+}
+.main h2 {
+  color: #355d88;
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.main p {
+  color: #000000;
+  font-size: 16px;
+  margin-top: 0;
+}
+.main p video {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+}
+.main p button {
+  background-color: #355d88;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.main p button:hover {
+  background-color: #274463;
+}
+
+.footer {
+  background-color: #355d88;
+  color: #ffffff;
+  padding: 20px;
+  text-align: left;
+}
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

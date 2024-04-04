@@ -1,0 +1,158 @@
+$primary-color: #355d88; // Основной цвет
+$secondary-color: #000000; // Вторичный цвет
+
+// Стили для навигационной панели
+#navbar {
+    $primary-color: #355d88; // Основной цвет
+$secondary-color: #000000; // Вторичный цвет
+  background-color: #f8f9fa; // Цвет фона
+  padding: 10px 0; // Поля внутри навигационной панели
+  display: flex; // Расположение элементов в ряд
+  justify-content: center; // Выравнивание по центру
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Тень
+  a {
+    text-decoration: none; // Убираем подчеркивание у ссылок
+    color: $secondary-color; // Цвет текста по умолчанию
+    margin: 0 20px; // Отступы по бокам между ссылками
+    &:first-child {
+      margin-left: 0; // Убираем отступ у первой ссылки
+    }
+    &:last-child {
+      margin-right: 0; // Убираем отступ у последней ссылки
+    }
+    &:hover {
+      text-decoration: underline; // Подчеркиваем ссылку при наведении
+    }
+    &:first-child {
+      color: $primary-color; // Цвет синий для первой ссылки
+    }
+  }
+}
+
+// Стили для заголовка, текста и кнопки
+.header {
+  text-align: center; // Выравнивание заголовка и кнопки по центру
+//   margin-top: 2%; // Отступ сверху
+  background-color: #f8f9fa; // Серый фон контейнера
+  padding: 10%; // Увеличенные поля вокруг содержимого
+  h1 {
+    color: $primary-color; // Цвет синий для заголовка
+    font-size: 36px; // Размер шрифта заголовка
+    text-align: left; // Выравнивание текста заголовка слева
+    margin-bottom: 20px; // Увеличенный отступ снизу у заголовка
+    margin-top: 0; // Убираем отступ сверху у заголовка
+  }
+  p {
+    color: $secondary-color; // Цвет текста черный
+    font-size: 18px; // Размер шрифта текста
+    text-align: left; // Выравнивание текста слева
+    margin-bottom: 30px; // Увеличенный отступ снизу у текста
+    margin-top: 0; // Убираем отступ сверху у текста
+  }
+  $primary-color: #355d88; // Основной цвет
+
+  .button {
+    background-color: $primary-color; // Цвет фона кнопки
+    color: #fff; // Цвет текста кнопки
+    padding: 10px 20px; // Внутренние отступы кнопки
+    border: none; // Убираем границу кнопки
+    border-radius: 5px; // Закругляем углы кнопки
+    text-decoration: none; // Убираем подчеркивание
+    display: inline-block; // Размещаем кнопку как блочный элемент
+    text-align: center; // Выравниваем текст по центру
+    transition: background-color 0.3s ease; // Плавное изменение цвета фона при наведении
+    &:hover {
+      background-color: darken($primary-color, 10%); // Увеличиваем яркость цвета фона при наведении
+    }
+  }
+
+}
+
+.about {
+  background-color: #ffffff; // Белый фон
+  padding: 40px; // Поля вокруг содержимого
+  text-align: center; // Выравнивание текста по центру
+  margin-top: 20px; // Отступ сверху
+  padding: 6%; // Увеличенные поля вокруг содержимого
+  h2 {
+    color: $primary-color; // Цвет синий для заголовка
+    font-size: 28px; // Размер шрифта заголовка
+    margin-bottom: 20px; // Отступ снизу у заголовка
+  }
+  p {
+    color: $secondary-color; // Цвет текста черный
+    font-size: 16px; // Размер шрифта текста
+    margin-top: 0; // Убираем отступ сверху у текста
+  }
+}
+$primary-color: #355d88; // Основной цвет
+
+.sidebar {
+  display: flex; // Расположение элементов в ряд
+  background-color: $primary-color; // Синий фон
+  padding: 20px; // Поля вокруг содержимого
+  justify-content: space-between; // Выравнивание элементов по ширине контейнера
+  color: #ffffff; // Цвет текста белый
+  i {
+    font-size: 24px; // Размер иконок
+    display: flex; // Расположение текста и иконки внутри
+    flex-direction: column; // Текст и иконки располагаются вертикально
+    align-items: center; // Выравнивание по центру
+    a {
+      text-decoration: none; // Убираем подчеркивание у ссылок
+      text-align: center; // Выравнивание текста по центру
+    }
+  }
+}
+$primary-color: #355d88; // Основной цвет
+$secondary-color: #000000; // Вторичный цвет
+
+.main {
+  background-color: #f8f9fa; // Серый фон
+  text-align: center; // Выравнивание содержимого по центру
+  padding: 40px; // Поля вокруг содержимого
+  margin-top: 50px; // Отступ сверху
+  h2 {
+    color: $primary-color; // Цвет синий для заголовка
+    font-size: 28px; // Размер шрифта заголовка
+    margin-bottom: 20px; // Увеличенный отступ снизу у заголовка
+    margin-top: 0; // Убираем отступ сверху у заголовка
+  }
+  p {
+    color: $secondary-color; // Цвет текста черный
+    font-size: 16px; // Размер шрифта текста
+    margin-top: 0; // Убираем отступ сверху у текста
+    video {
+      display: block; // Размещаем видео как блочный элемент
+      margin: 0 auto 20px; // Центрируем видео и добавляем отступ снизу
+      max-width: 100%; // Максимальная ширина видео
+      height: auto; // Автоматическая высота видео
+    }
+    button {
+      background-color: $primary-color; // Цвет фона кнопки
+      color: #fff; // Цвет текста кнопки
+      padding: 10px 20px; // Внутренние отступы кнопки
+      border: none; // Убираем границу кнопки
+      border-radius: 5px; // Закругляем углы кнопки
+      text-decoration: none; // Убираем подчеркивание
+      transition: background-color 0.3s ease; // Плавное изменение цвета фона при наведении
+      &:hover {
+        background-color: darken($primary-color, 10%); // Увеличиваем яркость цвета фона при наведении
+      }
+    }
+  }
+}
+$primary-color: #355d88; // Основной цвет
+$secondary-color: #ffffff; // Вторичный цвет
+
+.footer {
+  background-color: $primary-color; // Синий фон
+  color: $secondary-color; // Белый текст
+  padding: 20px; // Поля вокруг содержимого
+  text-align: left; // Выравнивание содержимого по левому краю
+  h4 {
+    margin-bottom: 10px; // Отступ снизу у заголовка
+  }
+}
+
+
